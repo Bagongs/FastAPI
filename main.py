@@ -8,7 +8,7 @@ from pydantic import BaseModel  # Import Pydantic's BaseModel
 
 app = FastAPI()
 
-DATABASE_URL = "mysql://reizky:Reizky*18@172.16.2.87/fast_db"
+DATABASE_URL = "mysql://root@localhost/fast_db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
